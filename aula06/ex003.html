@@ -18,9 +18,14 @@
     <p>Já me livrei da maldição.</p>
 
     <script>
-       window.alert('Minha primeira mensagem')
-        window.confirm ('Está gostando de JS?')
-        window.prompt('Qual é seu nome?')
+      var n1 = Number(window.prompt('Digite um numero:'))
+      var n2 = Number(window.prompt('Digite outro numero:'))
+      var s = n1 + n2 //precisa converter string para number acrescentar parseInt()
+      //window.alert ('A soma dos valores é ' + s) //Concatenação por isso não somou
+      //number + number para adição
+      //string + string para concatenação
+      window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+
     </script>
 </body>
 </html>
