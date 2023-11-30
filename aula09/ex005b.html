@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+    body {
+        background-color: rgb(199, 68, 107);
+        color: white;
+        font: normal 16pt Arial;
+    }
+
+    h1 {
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    h1:hover {
+        background-color: rgb(153, 183, 211);
+    }
+
+    a {
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+   <h1><a href="#">Iniciando os estudos DOM</a></h1>
+   <p>Aqui vai o resultado</p>
+   <p>Aprendendo a usar o<strong> DOM</strong> em JavaScript</p>
+   <div id= especial>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eum sunt! Repellendus magnam deleniti vero deserunt magni. Incidunt veniam tenetur in, sunt mollitia hic ipsum aliquid quia itaque dolorum perspiciatis.</div>
+   <div id = msg>
+    Clique em mim</div>
+        
+    <script>
+     var corpo = window.document.body
+     var p1 = window.document.getElementsByTagName('p')[0] 
+     p1.style.color= 'yellow'
+    var d = window.document.querySelector('div#msg')
+    d.style.color = 'blue'
+    d.style.background = 'yellow'
+    d.style.border = '1px solid black'
+    d.style.margin = '30px'
+    
+      
+   var e = window.document.querySelector ('div#especial')
+   e.style.background = 'blue'
+    
+    </script>
+</body>
+</html>
