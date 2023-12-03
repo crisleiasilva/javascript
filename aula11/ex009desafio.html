@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização</title>
+    <style>
+
+        body , html {
+           height: 100vh;
+           width: 100vw;
+           
+        }
+
+        body {
+            background: 
+           background-position: right top;
+           width: 100vw;
+           height: 100vh;
+           background-size:cover;
+           display:block;
+           margin: auto;
+        }
+
+        h1 {
+            font: normal 26pt Arial;
+            padding-bottom: 20px;
+            padding-top: 30px;
+            box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.589);
+            border-radius: 5px;
+            width: 400px;
+            height: 25px;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        
+        input {
+            margin-left: 20px;
+        }
+
+        
+    
+    </style>
+</head>
+<body>
+    <h1>Guichê de Informações</h1>
+    
+    <input type="text" name="txtpaís" id="txtpaís"> País
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id = ori>
+    
+    </div>
+    
+
+    </div>
+    <script>
+        function verificar() {
+            var txpa = window.document.getElementById('txtpaís')
+            var ori = window.document.getElementById('')
+            
+            var país= Text (txpa.value)
+            res.innerHTML = `Você é Brasileiro ${país}`
+
+            var origem = window.document.getElementById('div#ori')
+            
+            if (país != Brasil) {
+                res.innerHTML+= `<p>Você é  <strong>ESTRANGEIRO </strong></p>`
+            }
+            ori.innerHTML += `<p>Seja Bem-Vindo(a)!</p>`
+        }
+        
+
+        
+    </script>
+
+</body>
+<html>
