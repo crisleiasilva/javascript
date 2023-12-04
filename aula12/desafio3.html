@@ -4,12 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Critérios de Votação</title>
+    <style>
+        body {
+            background-color: lightgray;
+            border: 1px solid rgb(56, 55, 55);
+            width:600px;
+            border-width: 10px;
+            border-radius: 2px 2px 0px 2px;
+            margin: auto;
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+        }
+
+        .box {
+            font: normal 20pt Arial ;
+            padding-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 15px;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
     <h1>Critérios de Votação</h1>
-    <strong>Sexo:</strong><input type="checkbox" name="masc" id="imasc" checked> Masculino
+    <strong>Sexo:</strong><input class="box" type="checkbox" name="masc" id="imasc" checked> Masculino
     <input type="checkbox" name="ifem" id="ifem"> Feminino<br>
-    Idade: <input type="number" name="iidade" id="iidade">
+    Idade: <input class="box2" type="number" name="iidade" id="iidade">
     <input type="button" value="Verificar" onclick="verificar()">
     <div id="res">
 
@@ -19,16 +45,17 @@
             var idade = window.document.getElementById('iidade')
            var ida = Number(idade.value)
             var res = window.document.querySelector('div#res')
-            res.innerHTML += `<p>Você tem <strong>${ida}</strong> anos.`
-                if (ida < '16') {
-                    res.innerHTML += `<p>Não Vota</p>`
-                    } else if (iidade < '18' || iidade > '65') {
-                        res.innerHTML +=`<p> Voto Opcional</p>` 
-                    
-                       res.innerHTML += `<p> Voto Obrigatório </p>`  
-                    }
-                    
-                    res.innerHTML+= `Saiba mais acessando seu app!!!`
+            res.innerHTML = `<p>Você tem <strong>${ida}</strong> anos</p>`
+                    if (ida < '16'){
+                        res.innerHTML += '<p>Não Vota</p>'
+                    } else if (ida < 18 || ida > 65){
+                        res.innerHTML += '<p>Voto Opcional</p>' 
+                    } else { 
+                        res.innerHTML += '<p>Voto Obrigatório</p>'  
+                           
+                    } 
+                      
+                    res.innerHTML+= 'Saiba mais acessando seu app!!!'
                
                 }
                 
