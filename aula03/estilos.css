@@ -13,6 +13,16 @@ header {
 
 }
 
+h1 {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.651);
+    background: white;
+    border-radius: 8px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
 section {
     background: rgb(229, 203, 229);
     border-radius: 10px;
@@ -23,9 +33,18 @@ section {
 
 }
 
+img {
+    width: 150px;
+}
+
+.caixa {
+    
+}
+
 footer {
 color: rgb(65, 35, 65);
 font-style: italic;
 text-align: center;
+margin-top: 60px;
 
 }
