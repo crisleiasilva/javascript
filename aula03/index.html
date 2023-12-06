@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Saldo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Saldo</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Nome do Cliente:
+                <input type="text" name="txtnome" id="txtnome">
+            </p>
+            <p>
+                Valor do Depósito:
+                <input type="number" name="idep" id="idep">
+            </p>
+            <p>
+                Saldo Total da Conta:
+                <input type="number" name="isaldo" id="isaldo">
+            </p>
+            <p>
+                <input type="button" value="Calcular" onclick="calcular()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para saber o seu saldo!  
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Crislei Silva</p> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
