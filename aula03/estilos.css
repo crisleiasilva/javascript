@@ -9,8 +9,6 @@ header {
     color: rgb(85, 3, 85);
     padding: 10px;
    
-    
-
 }
 
 h1 {
@@ -37,8 +35,31 @@ img {
     width: 150px;
 }
 
-.caixa {
+.botao {
+    background: rgba(128, 0, 128, 0.733);
+    width: 150px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    border-radius: 5px;
+    border:0px;
+ 
+    padding: 4px;
+    transform:translateY(-4px);
     
+}
+
+div#campo :hover {
+   
+    border-radius: 8px;   
+
+}
+
+input {
+    border-radius:4px;
+    width: 150px;
+    background:white;
 }
 
 footer {

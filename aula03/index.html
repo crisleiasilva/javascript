@@ -11,30 +11,29 @@
         <h1>Verificador de Saldo</h1>
     </header>
     <section>
-        <div>
+        <div id="campo">
             <p>
                 Nome do Cliente:
-                <input type="text" name="txtnome" id="txtnome">
+                <input type="text" name="txtnome" id="txtnome" placeholder="seu nome">
             </p>
             <p>
                 Saldo Atual:
-                <input class="caixa" type="number" name="tsal" id="tsal">
+                <input class="caixa" type="number" name="tsal" id="txsal" placeholder="saldo atual">
             </p>
             
             <p>
-                Valor do Depósito:
-                <input class="caixa" type="number" name="idep" id="idep">
+                
+                    Valor do Depósito:
+                    <input class="caixa" type="number" name="txdep" id="txdep" placeholder="valor deposito">
+                
             </p>
+           
             <p>
-                Saldo Total da Conta:
-                <input class="caixa" type="number" name="isaldo" id="isaldo">
-            </p>
-            <p>
-                <input type="button" value="Calcular" onclick="calcular()">
+                <div class="botao"><input type="button" value="Calcular" onclick="calcular()"></div>
             </p>
         </div>
         <div id="res">
-            Preencha os dados acima para saber o seu saldo!  
+            
         </div>
     </section>
 
