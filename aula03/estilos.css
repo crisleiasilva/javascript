@@ -19,20 +19,22 @@ h1 {
     text-align: center;
     margin: auto;
     margin-bottom: 20px;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.534);
 }
 
 section {
     background: rgb(229, 203, 229);
     border-radius: 10px;
     width: 500px;
+    height: 250px;
     text-align: center;
     margin: auto;
     padding-top: 10px;
-
+    box-shadow: 2px 3px 1px 3px rgba(255, 255, 255, 0.795);
 }
 
 img {
-    width: 150px;
+    width: 90px;
 }
 
 .botao {
@@ -40,7 +42,7 @@ img {
     width: 150px;
     text-align: center;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     display: block;
     border-radius: 5px;
     border:0px;
