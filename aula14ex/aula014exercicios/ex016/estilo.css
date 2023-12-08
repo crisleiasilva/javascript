@@ -1,0 +1,52 @@
+body {
+    background-image:url(../ex016/fundo/numazul.jpg);
+    background-repeat: repeat;
+    /*background-position: center ;*/
+    background-position-y: right bottom ;
+    background-size: cover;
+    background-attachment: fixed;
+    font: normal 16pt Arial;
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: auto;
+}
+
+header {
+    color: white;
+    text-align: center;
+    margin-top: 160px;
+    margin-right: 50px;
+
+}
+
+h1 {
+   background-color:white;
+   color:#1E41EB;
+   width: 350px;
+   text-align: center;
+   margin: auto;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   border-radius: 10px;
+   box-shadow: 2px 2px 2px 2px  rgba(0, 0, 0, 0.486);
+}
+
+section {
+    background:white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.63);
+    
+}
+
+footer {
+    color:#1E41EB ;
+    text-align: center;
+    font-style: italic;
+    margin-top: 110px;
+
+
+}
