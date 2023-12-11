@@ -33,6 +33,7 @@
             text-align: center;
             margin: auto;
             margin-bottom: 30px;
+            text-shadow: 1px 1px 1px ;
         }
         
         input {
@@ -41,16 +42,27 @@
 
         div#car {
             padding: 8px;
-              
+            display: inline-block;    
+        }
+
+       input.botao {
+          width: 100px;
+          border-radius: 8px;
+          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.705) ;
+          color:black;
+          
         }
     
+        .botao:hover {
+            background-color: rgb(71, 236, 236);
+        }
     </style>
 </head>
 <body>
     <h1>Sistema de Multas</h1>
-    <div id="car">Velocidade do Carro:</div>
-    <input type="number" name="txtvel" id="txtvel"> Km/h
-    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="car"><strong>Velocidade do Carro:</strong></div>
+    <input type="number" name="txtvel" id="txtvel"> <strong>Km/h</strong>
+    <input class="botao" type="button" value="Verificar" onclick="calcular()">
     <div id="res">
 
     </div>
