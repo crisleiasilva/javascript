@@ -7,6 +7,6 @@ valores.sort()
     console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
 }*/
 
-for(let pos in valores) {
+for(let pos in valores) { //Leia-se: Para cada posição em 'valores' vou mostrar valores
     console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
 }
