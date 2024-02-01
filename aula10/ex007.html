@@ -15,11 +15,13 @@
             font: normal 16pt Arial;
             width: 110px;
             box-shadow: 1px 1px  0px 1px  rgba(0, 0, 0, 0.212);
+            border-radius: 4px;
         }
 
         div#res {
-            margin-top: 10px;
-            text-align: left;
+            margin-top: 15px;
+            text-align: center;
+
         }
     </style>
 </head>
@@ -31,12 +33,12 @@
   <div id="res">Resultado</div>
   <script>
         function somar() {
-            var tn1 = window.document.getElementById('txtn1')
-            var tn2 = window.document.querySelector('input#txtn2')
-            var res = window.document.getElementById('res')
-            var n1= Number(tn1.value)
-            var n2= Number(tn2.value)
-            var s = n1 + n2
+            let tn1 = window.document.getElementById('txtn1')
+            let tn2 = window.document.querySelector('input#txtn2')
+            let res = window.document.getElementById('res')
+            let n1= Number(tn1.value)
+            let n2= Number(tn2.value)
+            let s = n1 + n2
             res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
         }
   </script>
