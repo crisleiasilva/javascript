@@ -9,28 +9,47 @@
 <body>
   <header class="logotipo">
     <div class="logo__inicio">
-        <img class="logo" src="./imagem/rank_2059326.png" alt="logo do coleégio"><h1>Colégio Programação</h1>
+        <img class="logo" src="./imagem/rank_2059326.png" alt="logo do colégio"><h1 class="parag__logo">Colégio Programação</h1>
     </div>
   </header>
   <main>
     <form action="" method="post" autocomplete="off">
-      <p>
-        <label for="inome">Nome do Aluno:</label>
-        <input type="text" name="nome" id="inome" required maxlength="35"  size ="35" placeholder="Nome do Aluno">
-      </p>
-      <p>
-        <label for="iserie">Série:</label>
-        <input type="text" name="serie" id="iserie" required size="8">
-      </p>
-      <p>
-        <label for="iletivo">Ano Letivo:</label>
-        <input type="number" name="letivo" id="iletivo" required maxlength="6" size="8">
-      </p>
-
+      <fieldset class="caixa__identificacao">
+        <h1 class="parag__boletim">Boletim Escolar</h1>
+        <p>
+          <label class="caixa__input" for="inome">Nome do Aluno:</label>
+          <input class="caixa__input" type="text" name="nome" id="inome" required maxlength="35" size ="35">
+        </p>
+        <p>
+          <label  class="caixa__input" for="iserie">Série:</label>
+          <input type="text" name="serie" id="iserie" required size="8">
+        </p> 
+        <p>
+          <label class="caixa__input" for="iletivo">Ano Letivo:</label>
+          <input type="number" name="letivo" id="iletivo" required maxlength="6" size="8">
+        </p>
+      </fieldset>
     </form>
+      <table>
+        <caption>Média Final</caption>
+        <th>
+          <tr>
+            <td colspan="4">Lingua Portuguesa</td>
+            <td colspan="4">Matemática</td>
+            <td>Inglês</td>
+            <td>História</td>
+            <td>Geografia</td>
+            <td>Ciências</td>
+          </tr>
+        </th>
+      </table>
   </main>
   <footer>
-
+      <a class="link__rodape" href="#">
+        <p class="parag__rodape">Colégio Programação - Infantil ao Ensino Médio</p> 
+      </a>
+      <p class="parag__rodape">Rua: Alinhamento, nº222 - Pq Sharp - São Paulo</p>
+      <p class="parag__rodape">E-mail:colegioprogramação@gmail.com</p>
   </footer>
 </body>
 </html>
