@@ -30,26 +30,42 @@
         </p>
       </fieldset>
     </form>
-      <table>
-        <caption>Média Final</caption>
-        <th>
-          <tr>
-            <td colspan="4">Lingua Portuguesa</td>
-            <td colspan="4">Matemática</td>
-            <td>Inglês</td>
-            <td>História</td>
-            <td>Geografia</td>
-            <td>Ciências</td>
-          </tr>
-        </th>
-      </table>
+    <form action="">
+      <fieldset class="caixa__notas">
+        <label class="label__notas" for="matlg">Língua Portuguesa:</label>
+        <input class="input__notas" type="number" name="iportugues" id="iportugues" required   size="4" placeholder="Nota 1"> 
+        <input class="input__notas" type="number" name="iportugues2" id="iportugues2" required size="4" placeholder="Nota 2"> 
+        <input class="input__notas" type="button" value="Calcular" onclick="calcular()">
+        <input class="input__notas" type="number" name="imedia" id="imedia" size="4" placeholder="Média Final"> <br>
+
+        <label class="label__notas" for="matem">Matemática:</label>
+        <input class="input__notas" type="number" name="imatematica" id="imatematica" required size="4" placeholder="Nota 1"> 
+        <input class="input__notas" type="number" name="imatematica2" id="imatematica2" required size="4" placeholder="Nota 2">
+        <input class="input__notas" type="button" value="Calcular" onclick="calcular()">
+        <input class="input__notas" type="number" name="imedia2" id="imedia2" placeholder="Média Final"> <br>
+        <label class="label__notas" for="ing">Inglês:</label>
+        <input class="input__notas" type="number" name="iingles" id="iingles" required placeholder="Nota 1">
+        <input class="input__notas" type="number" name="iingles2" id="iingles2" required placeholder="Nota 2">
+        <input class="input__notas" type="button" value="Calcular" onclick="calcular()">
+        <input class="input__notas" type="number" name="imedia3" id="imedia3" placeholder="Média Final">
+      </fieldset>
+    </form>
+
+
+
   </main>
-  <footer>
+  <footer class="rodape">
       <a class="link__rodape" href="#">
         <p class="parag__rodape">Colégio Programação - Infantil ao Ensino Médio</p> 
       </a>
       <p class="parag__rodape">Rua: Alinhamento, nº222 - Pq Sharp - São Paulo</p>
       <p class="parag__rodape">E-mail:colegioprogramação@gmail.com</p>
   </footer>
+  
+  <a class="link__git" href="https://github.com/crisleiasilva">Desenvolvido por Crislei Silva</a>
+
+  <script>
+
+  </script>
 </body>
 </html>
