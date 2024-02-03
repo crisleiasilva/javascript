@@ -57,7 +57,7 @@ body {
 }
 
 .caixa__notas {
-  width:850px;
+  width:700px;
   padding: 20px;
   margin-left: 60px;
   border: 2px solid rgb(128, 124, 124);
@@ -105,4 +105,11 @@ color:darkblue;
   font-weight: 600;
   margin-top: 100px;
   margin-left: 60px;
+}
+
+#res {
+  background-color:  rgb(178, 178, 214);
+  width: 600px;
+  padding: 30px;
+  border-radius:8px;
 }
