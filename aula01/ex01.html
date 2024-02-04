@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="parag">Cálculo Salário</h1>
+  Salário do Mês: <input class="caixa__inicio"type="number" name="txsal" id="txsal">
+  Horas Extras do Mês : <input class="caixa__inicio" type="number" name="txhor" id="txhor">
+  Desconto por Atraso : <input class="caixa__inicio" type="number" name="txdes" id="txdes">
+  <input class="botao" type="button" value="Calcular" onclick="calcular()">
+  <div id="res"></div>
+
+  <script>
+      function calcular() {
+        let salario = window.document.getElementById('txsal')
+        let hora = window.document.getElementById('txhor')
+        let atraso = window.document.getElementById('txdes')
+        let res = window.document.querySelector('div#res')
+        let valor1 = Number(salario.value)
+        let valor2 = Number()
+      }
+  </script>
+</body>
+</html>
