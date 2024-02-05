@@ -10,7 +10,7 @@
   <h1 class="parag">Cálculo Salário</h1>
   Salário do Mês: <input class="caixa__inicio"type="number" name="txsal" id="txsal">
   Horas Extras do Mês : <input class="caixa__inicio" type="number" name="txhor" id="txhor">
-  Desconto por Atraso : <input class="caixa__inicio" type="number" name="txdes" id="txdes">
+   Atraso : <input class="caixa__inicio" type="number" name="txdes" id="txdes">
   <input class="botao" type="button" value="Calcular" onclick="calcular()">
   <div id="res"></div>
 
@@ -25,7 +25,8 @@
         let valor3 = Number(atraso.value)
         let fixo = (valor1 + valor2) - valor3
         
-        res.innerHTML=`Seu salário neste mês é R$ ${fixo}`
+        res.innerHTML= `<p> Seu salário neste mês é R$ ${fixo}</p>`
+
         
       }
   </script>
