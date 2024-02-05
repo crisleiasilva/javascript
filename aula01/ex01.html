@@ -21,7 +21,12 @@
         let atraso = window.document.getElementById('txdes')
         let res = window.document.querySelector('div#res')
         let valor1 = Number(salario.value)
-        let valor2 = Number()
+        let valor2 = Number(hora.value)
+        let valor3 = Number(atraso.value)
+        let fixo = (valor1 + valor2) - valor3
+        
+        res.innerHTML=`Seu salário neste mês é R$ ${fixo}`
+        
       }
   </script>
 </body>
