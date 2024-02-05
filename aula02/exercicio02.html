@@ -7,35 +7,79 @@
   <style>
     body{
       background-color:rgb(165, 215, 231);
+      margin:0;
+      padding:0;
+    }
+
+    .titulo {
+      background-color: rgb(193, 205, 243);
+      width:500px;
+      padding:10px;
+      margin: auto;
+      margin-top: 50px;
+      margin-left: 50px;
+      text-align: center;
+      border: 3px dashed white;
+      border-radius: 6px;
+      box-shadow: 2px 2px rgba(0, 0, 0, 0.705);
+    }
+
+    .botao {
+      font-size: 17px;
+      font-weight: 800;
+      color:darkblue;
+      text-shadow: 2px 2px white;
+      width:160px;
+      height: 60px;
+      border:none;
+      border-radius: 4px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+      margin-left: 50px;
+      margin-bottom: 50px;
+    }
+
+    .parag {
+      margin-left: 50px;
+      margin-bottom: 50px;
+      font-weight: 600;
+    }
+
+    #res {
+      margin-left: 50px;
     }
   </style>
 </head>
 <body>
-  <h1>Média do Aluno v2.0</h1>
-  <p>Verifique abaixo sua média:</p>
-  <input type="button" value="Calcular Média" onclick="calcular()">
+  <h1 class="titulo">Média do Aluno v2.0</h1>
+  <p class="parag">Verifique abaixo sua média:</p>
+  <input class="botao" type="button" value="Calcular Média" onclick="calcular()">
   <div id="res">Resultado vai aparecer aqui:</div>
   <div id="res1"></div>
 
   <script>
   
-   let nome = prompt('Qual é o seu nome?')
-   res.innerHTML+=(`Calculando a média final de ${nome}`)
+     let nome = prompt('Qual é o seu nome?')
+      res.innerHTML+=(`<p>Calculando a média final de <strong>${nome}</strong></p>`)
+   
     
-   let nota1 = Number (prompt(`Qual foi a primeira nota de ${nome}?`))
-   let nota2 = Number (prompt(`Além da nota ${nota1} qual foi a segunda nota de ${nome}?`))
-   res.innerHTML +=(`As notas obtidas foram ${nota1} e ${nota2}`) 
+     let nota1 = Number (prompt(`Qual foi a primeira nota de ${nome}?`))
+    
+     let nota2 = Number (prompt(`Além da nota ${nota1} qual foi a segunda nota de ${nome}?`))
+      res.innerHTML +=(`<p>As notas obtidas foram<strong> ${nota1} e ${nota2}</strong></p>`) 
 
     
-   let mediaFinal = Number  (nota1 + nota2) / 2
-   res.innerHTML += (`A média final é  ${mediaFinal}`)  
-    
    function calcular() {
-          
+      let mediaFinal = Number  (nota1 + nota2) / 2
+      res.innerHTML += (`<p> A média final é  ${mediaFinal}</p>`)  
+      res.style.background+= 'yellow'
+
       if(mediaFinal >=7) {
         res.innerHTML+= `A mensagem que temos é : Meus Parabéns!!!`
+       
       }else {
-        res.innerHTML += 'Estude um pouco mais!'
+        res.innerHTML += 'Sua média está abaixo do esperado,estude um pouco mais!'
+        
+        
       }
     }
   </script>
