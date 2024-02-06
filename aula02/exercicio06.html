@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculando IMC</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <h1>Calculadora IMC</h1>
+  <label class="alt1"  for="altura">Altura (cm): </label>
+  <input class="alt" id="altura" type="number" min="100" max="250"><br>
+  <label  class="pes1" for="peso">Peso (kg): </label>
+  <input class="pes" id="peso" type="number" min="0" max="250"><br>
+  <button  class="botao" onclick="calcularIMC()">Calcular o IMC</button>
+  <div id="resultadoIMC"></div>
+  <div id="extra"></div><br>
+  <pre>
+    *******************************************
+    |    IMC        | CATEGORIA               |
+    -------------------------------------------
+    | Até 18,5       | Abaixo do peso         |
+    | De 18,5 - 24,9 | Saudável               |
+    | De 25,0 - 29,9 | Sobrepeso              |
+    | De 30,0 - 39,9 | Obeso                  |
+    | Acima de 40    | Alto risco de obesidade|
+    *******************************************
+  </pre>
+
+  <script>
+    function calcularIMC() {
+      let altura = document.getElementById("altura").value;
+      let peso = document.getElementById("peso").value;
+      altura /=100;
+      let imc = Number ((peso / (altura* altura)).toFixed(2)); 
+      document.getElementById("resultadoIMC").innerHTML = "IMC <strong>" + imc + "</strong>"
+    }
+  </script>
+
+</body>
+</html>
