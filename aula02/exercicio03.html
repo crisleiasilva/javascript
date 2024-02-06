@@ -7,15 +7,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Calculando Idade</h1>
- Ano de Nascimento:<input type="number" name="iano" id="iano">
- Ano Atual: <input type="number" name="iatual" id="iatual"><br>
- <input type="button" value="Verificar" onclick="calcular()">
+  <h1 class="titulo">Calculando Idade</h1>
+ <section class="input">
+   Ano Atual: <input class="input__inicio" type="number" name="iatual" id="iatual"><br>
+   Ano de Nascimento:<input class="input__inicio" type="number" name="iano" id="iano"><br>
+ </section>
+ <input class="botao" type="button" value="Verificar" onclick="calcular()">
  <div id="res"></div>
 
  <script>
     function calcular() {
-      let
+      let nasc = window.document.getElementById('iano')
+      let atual = window.document.getElementById('iatual')
+      let res = window.document.querySelector('div#res')
+      let idade1 = Number(atual.value)
+      let idade2 = Number(nasc.value)
+      let anos = idade1 - idade2
+      //  res.innerHTML=`A sua idade hoje é <strong>${anos} </strong> anos.`
+      if (anos <= 17) {
+        res.innerHTML=`<p> Sua idade é ${anos}  anos e não tem <strong>idade mínima</strong> para realizar nosso curso.</p>`
+      }else {
+        res.innerHTML=`<p> <strong>PARABÉNS</strong>, você tem ${anos} anos e está apto para realizar nosso curso.</p>`
+      }
     }
  </script>
 </body>
