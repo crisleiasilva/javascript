@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maior Número</title>
+  <style>
+    body {
+      background-color: rgb(231, 199, 204);
+    }
+  </style>
+</head>
+<body>
+  <h1>Maior Número</h1>
+  <div id="res"></div>
+  <script>
+    let numero01 = Number (prompt('Informe o primeiro número')); 
+    let numero02 = Number(prompt('Informe o segundo número'));
+    let numero03 = Number (prompt('Informe o terceiro número'));
+    let res = window.document.querySelector('div#res')
+    if ((numero01 > numero02) && (numero01 > numero03)) {
+      res.innerHTML = 'O primeiro número informado é MAIOR!'
+    }else if ((numero02 > numero01) && (numero02 > numero03)) {
+      res.innerHTML = 'O segundo informado número é MAIOR!'
+    }else if ((numero03 > numero01) && (numero03 > numero02)) {
+      res.innerHTML = 'O terceiro número informado é MAIOR'
+    }
+   res.innerHTML ='Os números são iguais ou nada foi informado'
+   
+  </script>
+</body>
+</html>
