@@ -5,15 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tratamento de Dados</title>
   <style>
+    body {
+      background-color: azure;
+    }
 
+    h1 {
+      color: darkorange;
+    }
+
+    p{
+      color:indigo;
+      font-size: 18px;
+    }
   </style>
 </head>
 <body>
   <h1>Tratamento de Dados</h1>
-  <p>Converso de string para number</p>
-  <p>Converso de number para string</p>
+  <p>Conversão de string para number</p>
+  <p>Conversão de number para string</p>
 
   <script>
+    let nome = prompt("Digite seu nome: ");
+    let n1 = Number(prompt("Digite um número: "));
+    let n2 = Number(prompt("Digite outro número: "));//parseInt converte string em número
+    let soma = n1 + n2;
+    document.write(`Olá, ${nome} você digitou os números: ${n1} e ${n2}, a soma dos valores: ${soma}`)
+
+    
+
+
 
   </script>
 </body>
